@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class Application {
 
-    //Main Method
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         double num1, num2, num3;
@@ -28,8 +27,8 @@ public class Application {
             num3 = scn.nextDouble();
 
             CalculationService cs = new CalculationService();
-            System.out.println("The sum of the numbers:" + cs.sumOfAll(num1, num2, num3));
-            System.out.println("The average of the numbers:" + cs.thirdOfAll(num1, num2, num3));
+            System.out.println("The sum of the numbers:" + cs.sum(num1, num2, num3));
+            System.out.println("The average of the numbers:" + cs.average(num1, num2, num3));
         } catch (Exception InputMismatchException) {
             System.out.println("You can only enter numbers");
         }
