@@ -7,10 +7,6 @@ public class Main{
     public static double num1, num2, num3;
     public static double sumOfAll, thirdOfAll;
 
-    //Constructor
-
-
-
     //Scanner
     static Scanner scn = new Scanner(System.in);
 
